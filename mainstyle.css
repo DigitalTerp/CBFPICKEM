@@ -1,0 +1,232 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Blinker', sans-serif;
+  background-color: #f4f6f9;
+  color: #3a3a3a;
+  line-height: 1.6;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: -webkit-linear-gradient(18deg, hsla(202, 71%, 27%, 1) 0%, hsla(176, 45%, 66%, 1) 100%);
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  flex: 1;
+}
+
+.logo span {
+  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.4);
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+.logo .pickem {
+  color: #2f0268;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex: 2;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: #2f0268;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.nav-links a:hover {
+  background-color: #dde2e6;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  border-radius: 0 0 15px 15px;
+  top: 100%;
+  z-index: 10;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #111;
+  padding: 10px 12px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #575757;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.hamburger .bar {
+  height: 3px;
+  width: 25px;
+  background-color: #1a1a1a;
+}
+
+/* Responsive Nav */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+    align-self: flex-end;
+    margin-top: -2rem;
+  }
+
+  .dropdown:hover .dropdown-content {
+    position: static;
+  }
+}
+
+/* HERO SECTION */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #FFFFFF;
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('/images/Sports_Field__Sunset_Light_original_1869192.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+/* HOW TO PLAY */
+.how__info-container {
+  flex: 1 1 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.how__info-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #00D084;
+}
+
+.how-to-list {
+  list-style-position: inside;
+  font-size: 1.2rem;
+  line-height: 2;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 0;
+  color: #ffffff;
+  text-align: left;
+}
+
+.how-to-list em {
+  display: block;
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #aaffdd;
+}
+
+
+/* CALL TO ACTION BUTTON */
+.cta {
+  display: inline-block;
+  margin-top: 2rem;
+  background: linear-gradient(135deg, #1B365D, #00D084);
+  color: #FFFFFF;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px rgba(27, 54, 93, 0.4);
+  animation: popIn 0.6s ease forwards;
+}
+
+.cta:hover {
+  background: linear-gradient(135deg, #003f5c, #00c896);
+  box-shadow: 0 0 18px rgba(0, 208, 132, 0.6);
+}
+
+/* FOOTER */
+footer {
+  background: #E7EDF5;
+  text-align: center;
+  padding: 1rem;
+  color: #121212;
+}
+
+footer a {
+  color: #121212;
+  text-decoration: underline;
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Join C.B.F PICKEM to play weekly NFL, NCAAF, and NBA pick’em pools! Real fun. Real competition.">
+  <title>C.B.F PICKEM</title>
+  <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="/images/CBFLogoFULL(Iso).png" alt="C.B.F Logo" style="height: 30px;">
+      <span>C.B.F <span class="pickem">PICKEM</span></span>
+    </div>
+    <nav>
+      <div class="mobile-nav">
+        <a href="#" class="cta-nav">JOIN</a>
+        <div class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation" role="button" tabindex="0">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+      <ul id="nav-links">
+        <li><a href="#">ADMIN</a></li>
+        <li><a href="#" class="cta-nav">JOIN</a></li>
+        <li><a href="#" class="cta-login">LOGIN</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-images">
+        <img src="/images/football-1.png" alt="Football Player" loading="lazy">
+        <img src="/images/basketball-2.png" alt="Basketball Player" loading="lazy">
+      </div>
+      <h1>
+        HOSTING YOUR NFL, NCAAF & NBA PICK'EM POOLS
+      </h1>
+      <a href="#" class="cta">JOIN TODAY!</a>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS SECTION -->
+  <section class="how-it-works">
+    <div class="how__info-container">
+      <h2>Best winning record for the entire week wins.</h2>
+      <div class="how__info">
+        <div class="how__info-left">
+          <div class="how__info-item"><p class="how__info-text">Ties will be determined by closest to overall score (over or under).</p></div>
+          <div class="how__info-item"><p class="how__info-text">If there is more than 1 winner, the Pot is split.</p></div>
+          <div class="how__info-item"><p class="how__info-text">If game is cancelled for any reason, then that game will not count.</p></div>
+          <div class="how__info-item"><p class="how__info-text">If a Tiebreaker game is cancelled, the player with the highest wins will split the pot.</p></div>
+          <div class="how__info-item"><p class="how__info-text">It is <strong>YOUR RESPONSIBILITY</strong> to pay for all your picks before the deadline.</p></div>
+          <div class="how__info-item"><p class="how__info-text">It is <strong>YOUR RESPONSIBILITY</strong> to check your picks before submitting your sheets.</p></div>
+          <div class="how__info-item"><p class="how__info-text"><strong>NO CHANGES CAN BE DONE FOR ONLINE PICKS</strong></p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    FOR ENTERTAINMENT PURPOSES ONLY
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav-links').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
