@@ -144,11 +144,16 @@ body {
 
 /* HERO SECTION */
 .hero {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 4rem 2rem;
-  color: #FFFFFF;
-  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('/images/Sports_Field__Sunset_Light_original_1869192.jpg') no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.95)), url('/images/Background2.jpg') no-repeat center center;
   background-size: cover;
+  color: #ffffff;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
 }
 
 /* HOW TO PLAY */
