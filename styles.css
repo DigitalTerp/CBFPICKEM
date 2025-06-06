@@ -171,7 +171,7 @@ nav a:hover {
   margin-top: 2rem;
   padding: 4rem 2rem; /* Increase vertical space */
   min-height: 720px; /* Optional: add min-height to ensure it's taller */
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1.0)), url('/images/basketballpic.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1.0)), url('/images/Background2.jpg');
   background-size: cover;
   background-position: center;
   color: #ffffff;
@@ -196,7 +196,7 @@ nav a:hover {
 }
 
 .how__info-container h2 {
-  font-size: 1.75rem;
+  font-size: 2.75rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
   color: #00D084;
@@ -222,7 +222,7 @@ nav a:hover {
 }
 
 .how__info-text {
-  font-size: 1rem;
+  font-size: 1.75rem;
   line-height: 1.6;
 }
 
